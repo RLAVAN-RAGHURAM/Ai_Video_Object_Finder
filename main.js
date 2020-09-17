@@ -1,24 +1,30 @@
-video="";
-
-function preload(){
-video=createVideo('video.mp4');
-video.hide();
+function bedroom(){
+window.location="./bedroom/bedroom.html";
 }
-function setup(){
-canvas=createCanvas(480,380);
-canvas.center();
+function bathroom(){
+window.location="./bathroom/bathroom.html";
 }
-function draw(){
-image(video,0,0,480,380);
+function tv(){
+window.location="./TV/TV.html";
 }
-function start(){
-objectDetector=ml5.objectDetector('cocossd',modelLoaded);
-document.getElementById("status").innerHTML="Status : Detecting Object";
+function FishTank(){
+window.location="./Fishtank/FishTank.html";
 }
-function modelLoaded(){
-console.log("modeloaded");
-status=true;
-video.volume(0);
-video.speed(1);
-video.loop();
+function chair(){
+window.location="./Chair/chair.html";
+}
+function tab(){
+window.location="./tab/tab.html";
+}
+function person(){
+window.location="./person/person.html";
+}
+function boat(){
+window.location="./Boat/boat.html";
+}
+function apple(){
+window.location="./Apple_Basket/apple.html";
+}
+function book(){
+window.location="./Book/book.html"
 }
